@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { FilterComponent } from './core/shared/components/filter/filter.component';
+import { ListComponent } from './core/shared/components/list/list.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [FilterComponent, ListComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  standalone: true
 })
 export class AppComponent {
-  title = 'junior-frontend-developer-task';
+  
 }
