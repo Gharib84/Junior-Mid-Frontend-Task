@@ -17,7 +17,7 @@ import { ModalSignalService } from '../../../services/modal-signal.service';
     <h1 class="fw-bold text-black">Lista zadań</h1>
     <button class="btn btn-premium-add mx-3 fw-bold" (click)="openModal()">
       <span>✚</span>
-      Dodaj zadanie</button>
+      Dodaj</button>
   </div>
   <div class="row gy-3">
      @for (task of tasks$ | async; track $index) {
